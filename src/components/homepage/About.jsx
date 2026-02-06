@@ -73,7 +73,7 @@ export default function About({ forwardedRef }) {
             
             {/* Education Section */}
             <div className="mt-10 space-y-6">
-              <h4 className="text-3xl 2xl:text-5xl font-bold text-black mb-8">
+              <h4 className="text-3xl 2xl:text-5xl font-bold text-white mb-8">
                 Education
               </h4>
               

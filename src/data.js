@@ -9,9 +9,9 @@ export const siteConfig = {
   title: "Vishesh Kumar - AI Product Manager & Strategy Lead",
   description: "AI Product Manager and strategy lead based in San Francisco, CA. Specializing in AI/ML products, data-driven product strategy, and building products that scale.",
   url: "https://Vinit-Prajapati-17.github.io/vishesh",
-  email: "vishesh09.pm@gmail.com",
+  email: "vishesh.aipm@gmail.com",
   social: {
-    github: "https://github.com/visheshkumar",
+    github: "https://github.com/vishesh0999",
     linkedin: "https://www.linkedin.com/in/vishesh-prajapati-aipm/",
     twitter: "https://x.com/visheshkumar",
   },

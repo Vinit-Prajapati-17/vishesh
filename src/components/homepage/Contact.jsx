@@ -178,12 +178,12 @@ export default function Contact({ forwardedRef }) {
             <h4 className="text-body-1 2xl:text-4xl font-semibold">Contact Details</h4>
             <div className="flex flex-col space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="mailto:vishesh09.pm@gmail.com"
+                href="mailto:vishesh.aipm@gmail.com"
                 className="group relative w-fit cursor-pointer"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span>vishesh09.pm@gmail.com</span>
+                <span>vishesh.aipm@gmail.com</span>
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
               </a>
               <div className="flex gap-4">
@@ -227,7 +227,7 @@ export default function Contact({ forwardedRef }) {
                 </div>
               </a>
               <a
-                href="https://github.com/visheshkumar"
+                href="https://github.com/vishesh0999"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"

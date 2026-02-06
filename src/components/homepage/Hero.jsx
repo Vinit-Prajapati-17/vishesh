@@ -112,14 +112,14 @@ export default function Hero() {
           className="text-[12vw] text-black font-orbitron font-bold will-change-transform transform-gpu"
           style={{ backfaceVisibility: 'hidden' }}
         >
-          LET'S
+          WHO
         </div>
         <div 
           ref={lastLetters}
           className="text-[12vw] text-black font-orbitron font-bold will-change-transform transform-gpu"
           style={{ backfaceVisibility: 'hidden' }}
         >
-          TALK
+          AM I ?
         </div>
       </div>
 
@@ -153,7 +153,7 @@ export default function Hero() {
           </a>
           
           <a 
-            href="https://github.com/visheshkumar" 
+            href="https://github.com/vishesh0999" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group bg-accent-100 border border-accent-200 rounded-full p-4 hover:bg-accent-200 transition-all duration-300 hover:scale-110"
@@ -164,7 +164,7 @@ export default function Hero() {
           </a>
           
           <a 
-            href="mailto:vishesh09.pm@gmail.com" 
+            href="mailto:vishesh.aipm@gmail.com" 
             className="group bg-accent-100 border border-accent-200 rounded-full p-4 hover:bg-accent-200 transition-all duration-300 hover:scale-110"
           >
             <svg className="w-6 h-6 text-black hover:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">

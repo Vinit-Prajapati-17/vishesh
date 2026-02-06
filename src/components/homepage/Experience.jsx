@@ -127,24 +127,36 @@ export default function Experience({ forwardedRef }) {
       type: "previous",
       achievements: [
         {
-          metric: "50,000+",
-          description: "users reached with Financial Portfolio Insights Dashboard featuring embedded ML models—improved client retention 15% through automated ESG scoring, personalized risk analytics, and predictive optimization."
+          metric: "22%",
+          description: "improvement in operational efficiency across core workflows by owning enterprise SaaS product roadmap and delivery strategy for digital transformation platform."
         },
         {
-          metric: "10%",
-          description: "reduction in release delays through proactive cross-functional risk management across data quality, compliance, and integrations while balancing regulatory requirements (GDPR, MiFID II), technical feasibility, and user needs."
+          metric: "95%",
+          description: "on-time delivery achieved by managing and prioritizing a 300+ item backlog using Jira while leading cross-functional Agile teams."
         },
         {
-          metric: "1,000+",
-          description: "customers researched using SurveyMonkey, Qualtrics, and usage analytics to drive feature prioritization—defined backlog for risk scoring, asset allocation, and portfolio rebalancing tools."
+          metric: "30%",
+          description: "reduction in requirement clarification cycles through authoring detailed PRDs, release documentation, and decision logs in Confluence."
         },
         {
-          metric: "35%",
-          description: "faster incident resolution through post-launch monitoring and rapid response—incorporated learnings into roadmap iterations, reduced P1 incidents 40%."
+          metric: "15+",
+          description: "manual workflow steps eliminated and 28% reduction in fulfillment cycle time through discovery workshops and process mapping initiatives."
         },
         {
-          metric: "Real-time",
-          description: "decision-making enabled for wealth advisors through Tableau dashboards visualizing portfolio performance, benchmark comparisons, and ESG metrics—replaced manual Excel analysis."
+          metric: "25%",
+          description: "improvement in internal user task completion speed by collaborating with UX teams to validate wireframes and interaction designs."
+        },
+        {
+          metric: "18%",
+          description: "increase in platform adoption within six months by leveraging SQL and analytics dashboards for data-informed feature prioritization."
+        },
+        {
+          metric: "20%",
+          description: "reduction in integration defects by partnering with engineering teams to define API integration requirements and reviewing Swagger specifications."
+        },
+        {
+          metric: "Executive",
+          description: "KPI dashboards built using Tableau to provide leadership visibility into delivery progress and business impact, enabling smooth phased deployments."
         }
       ]
     }

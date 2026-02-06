@@ -213,27 +213,27 @@ export default function NavBar({ sectionRefs, color }) {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-7 font-orbitron text-body-3 items-center">
           <Link to="/#about" onClick={(e) => handleLinkClick(e, '#about')} className="group relative min-h-[44px] flex items-center">
-            <span>about</span>
+            <span className="font-bold">About</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
           <Link to="/#experience" onClick={(e) => handleLinkClick(e, '#experience')} className="group relative min-h-[44px] flex items-center">
-            <span>experience</span>
+            <span className="font-bold">Experience</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
           <Link to="/#skills" onClick={(e) => handleLinkClick(e, '#skills')} className="group relative min-h-[44px] flex items-center">
-            <span>skills</span>
+            <span className="font-bold">Skills</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
           <Link to="/#case-studies" onClick={(e) => handleLinkClick(e, '#case-studies')} className="group relative min-h-[44px] flex items-center">
-            <span>case studies</span>
+            <span className="font-bold">Case Studies</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
           <Link to="/#works" onClick={(e) => handleLinkClick(e, '#works')} className="group relative min-h-[44px] flex items-center">
-            <span>projects</span>
+            <span className="font-bold">Projects</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
           <Link to="/#contact" onClick={(e) => handleLinkClick(e, '#contact')} className="group relative min-h-[44px] flex items-center">
-            <span>contact</span>
+            <span className="font-bold">Contact</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
           <a
@@ -285,62 +285,62 @@ export default function NavBar({ sectionRefs, color }) {
           <Link 
             to="/#about" 
             onClick={(e) => handleLinkClick(e, '#about')}
-            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
+            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center font-bold ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '100ms' : '0ms' }}
           >
-            about
+            About
           </Link>
           <Link 
             to="/#experience" 
             onClick={(e) => handleLinkClick(e, '#experience')}
-            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
+            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center font-bold ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '150ms' : '0ms' }}
           >
-            experience
+            Experience
           </Link>
           <Link 
             to="/#skills" 
             onClick={(e) => handleLinkClick(e, '#skills')}
-            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
+            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center font-bold ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '175ms' : '0ms' }}
           >
-            skills
+            Skills
           </Link>
           <Link 
             to="/#case-studies" 
             onClick={(e) => handleLinkClick(e, '#case-studies')}
-            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
+            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center font-bold ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '200ms' : '0ms' }}
           >
-            case studies
+            Case Studies
           </Link>
           <Link 
             to="/#works" 
             onClick={(e) => handleLinkClick(e, '#works')}
-            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
+            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center font-bold ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '225ms' : '0ms' }}
           >
-            projects
+            Projects
           </Link>
           <Link 
             to="/#contact" 
             onClick={(e) => handleLinkClick(e, '#contact')}
-            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
+            className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center font-bold ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '250ms' : '0ms' }}
           >
-            contact
+            Contact
           </Link>
           <a 
             href="/vishesh/Visheshkumar AI Product Manager.pdf"

@@ -177,8 +177,24 @@ export default function NavBar({ sectionRefs, color }) {
     return () => ctx.revert();
   }, [sectionRefs]);
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e, targetId) => {
     setIsMenuOpen(false);
+    
+    // Handle smooth scrolling with offset for hash links
+    if (targetId && targetId.startsWith('#')) {
+      e.preventDefault();
+      const element = document.querySelector(targetId);
+      if (element) {
+        const navbarHeight = 80; // Adjust based on your navbar height
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
   };
 
   return (
@@ -196,34 +212,34 @@ export default function NavBar({ sectionRefs, color }) {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-7 font-orbitron text-body-3 items-center">
-          <Link to="/#about" className="group relative min-h-[44px] flex items-center">
+          <Link to="/#about" onClick={(e) => handleLinkClick(e, '#about')} className="group relative min-h-[44px] flex items-center">
             <span>about</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
-          <Link to="/#experience" className="group relative min-h-[44px] flex items-center">
+          <Link to="/#experience" onClick={(e) => handleLinkClick(e, '#experience')} className="group relative min-h-[44px] flex items-center">
             <span>experience</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
-          <Link to="/#skills" className="group relative min-h-[44px] flex items-center">
+          <Link to="/#skills" onClick={(e) => handleLinkClick(e, '#skills')} className="group relative min-h-[44px] flex items-center">
             <span>skills</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
-          <Link to="/#case-studies" className="group relative min-h-[44px] flex items-center">
+          <Link to="/#case-studies" onClick={(e) => handleLinkClick(e, '#case-studies')} className="group relative min-h-[44px] flex items-center">
             <span>case studies</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
-          <Link to="/#works" className="group relative min-h-[44px] flex items-center">
+          <Link to="/#works" onClick={(e) => handleLinkClick(e, '#works')} className="group relative min-h-[44px] flex items-center">
             <span>projects</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
-          <Link to="/#contact" className="group relative min-h-[44px] flex items-center">
+          <Link to="/#contact" onClick={(e) => handleLinkClick(e, '#contact')} className="group relative min-h-[44px] flex items-center">
             <span>contact</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
           <a
             ref={cta}
             className="button group relative hover:bg-transparent min-h-[44px] flex items-center"
-            href="/Visheshkumar AI Product Manager.pdf"
+            href="/vishesh/Visheshkumar AI Product Manager.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -268,7 +284,7 @@ export default function NavBar({ sectionRefs, color }) {
         <nav className="flex flex-col items-center justify-center h-full gap-8 font-orbitron">
           <Link 
             to="/#about" 
-            onClick={handleLinkClick}
+            onClick={(e) => handleLinkClick(e, '#about')}
             className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
@@ -278,7 +294,7 @@ export default function NavBar({ sectionRefs, color }) {
           </Link>
           <Link 
             to="/#experience" 
-            onClick={handleLinkClick}
+            onClick={(e) => handleLinkClick(e, '#experience')}
             className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
@@ -288,7 +304,7 @@ export default function NavBar({ sectionRefs, color }) {
           </Link>
           <Link 
             to="/#skills" 
-            onClick={handleLinkClick}
+            onClick={(e) => handleLinkClick(e, '#skills')}
             className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
@@ -298,7 +314,7 @@ export default function NavBar({ sectionRefs, color }) {
           </Link>
           <Link 
             to="/#case-studies" 
-            onClick={handleLinkClick}
+            onClick={(e) => handleLinkClick(e, '#case-studies')}
             className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
@@ -308,7 +324,7 @@ export default function NavBar({ sectionRefs, color }) {
           </Link>
           <Link 
             to="/#works" 
-            onClick={handleLinkClick}
+            onClick={(e) => handleLinkClick(e, '#works')}
             className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
@@ -318,7 +334,7 @@ export default function NavBar({ sectionRefs, color }) {
           </Link>
           <Link 
             to="/#contact" 
-            onClick={handleLinkClick}
+            onClick={(e) => handleLinkClick(e, '#contact')}
             className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
@@ -327,7 +343,7 @@ export default function NavBar({ sectionRefs, color }) {
             contact
           </Link>
           <a 
-            href="/Visheshkumar AI Product Manager.pdf"
+            href="/vishesh/Visheshkumar AI Product Manager.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleLinkClick}

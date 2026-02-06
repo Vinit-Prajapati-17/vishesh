@@ -42,7 +42,11 @@ export default function About({ forwardedRef }) {
   }, []);
 
   return (
-    <section ref={(el) => { aboutSection.current = el; if (forwardedRef) forwardedRef(el); }} aria-label="about me">
+    <section 
+      id="about"
+      ref={(el) => { aboutSection.current = el; if (forwardedRef) forwardedRef(el); }} 
+      aria-label="about me"
+    >
       <Heading title="about me" />
       <div className="mt-10 flex flex-col items-start gap-8 md:flex-row lg:gap-10 ">
         <div className="top-20 sm:sticky md:top-28 lg:top-32 md:w-3/5">
